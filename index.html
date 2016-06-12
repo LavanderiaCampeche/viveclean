@@ -43,6 +43,8 @@
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
+	
+	
 	<!-- Theme Style -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Modernizr JS -->
@@ -51,6 +53,8 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.7.3/fullcalendar.css">
 
 	</head>
 	<body>
@@ -184,9 +188,25 @@
 		</div>
 		<!-- Features -->
 		
-		<div class="fh5co-bg-section">
-           
+		<div class="fh5co-spacer fh5co-spacer-lg"></div>	
+		<div class="fh5co-bg-section" style="height: auto; padding: 30px; background-color: #94ccfd; color: #000000">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="fh5co-hero-wrap">
+                            <div class="fh5co-hero-intro">
+                               <h2 class="text-center">Programa aquí día, hora y lugar para recoger tu ropa</h2>
+                               <div class="fh5co-spacer fh5co-spacer-lg"></div>	
+                                <div id="calendar">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="fh5co-spacer fh5co-spacer-lg"></div>	
 		
 		<div class="fh5co-bg-section" style="background-image: url(images/web/03.jpg); background-attachment: fixed">
 			<div class="fh5co-overlay"></div>
@@ -322,11 +342,20 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Magnific Popup -->
 	<script src="js/jquery.magnific-popup.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/locale/es.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.7.3/fullcalendar.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.7.3/lang/es.js"></script>
+	
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
+
 	
 	<script type="text/javascript">
-        
+        $(document).ready(function(){
+            $('#calendar').fullCalendar();
+        });
     </script>
 
 	

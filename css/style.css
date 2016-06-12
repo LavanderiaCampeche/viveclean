@@ -6653,5 +6653,10 @@ a > img.fh5co-align-center {
   .col-lg-15 {
     width: 20%;
     float: left; } }
+.fc-day {
+  background: #ffffff; }
+
+.fc-day-header {
+  background: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */
